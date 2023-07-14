@@ -198,9 +198,9 @@ void draw() {
   if (estado.equals("inicio")) {
     //Inicio
     mostrarMenuPrincipal();
-  } else if (estado.equals("ventana")) {      //Here, put the name of the state
-    imagenConTexto(imagenes[2], "¡Se corrio el rumor de que hay ladrones\nque trepan los techos!", "top"); //first arg : imagenes with the number of the image, second arg : the text on the image, third arg : position of the text
-    opciones("Cerrar la ventana", "Dejarla abierta", "bottom"); //first arg : text of first option, second arg : text of second option, third arg : position of options
+  } else if (estado.equals("ventana")) {     
+    imagenConTexto(imagenes[2], "¡Se corrio el rumor de que hay ladrones\nque trepan los techos!", "top"); 
+    opciones("Cerrar la ventana", "Dejarla abierta", "bottom"); 
   } else if (estado.equals("ventanaCerrada")) {
     imagenConTexto(imagenes[3], "¡Que miedo! En serio ...\n ¿Trepan las techos?", "bottom" );
     opciones("Jugar con tus hermanos", "Dormir", "top");
@@ -208,7 +208,7 @@ void draw() {
     imagenConTexto(imagenes[4], "TEXT", "bottom");
     opciones("Jugar con tus hermanos", "Dormir", "top");
   } else if (estado.equals("durmiendoCerrada")) {
-    finalScreen(imagenes[7], "ZZZZZZZZZZZZZZZZZZ");  // to use if final screen, first argument, imagenes with image number, and second arg : text on last image
+    finalScreen(imagenes[7], "ZZZZZZZZZZZZZZZZZZ");  
   } else {
     tint(255, 255);
     fill(0);
@@ -227,8 +227,8 @@ void mousePressed() {
       estado = "creditos";
       cuentaFotograma = 0;
     }
-  } else if (estado.equals("ventana") ) {  // name of the state where there are options
-    administrarClic("ventanaCerrada", "ventanaAbierta", "bottom");  // first arg : name of the state the first option leads you to, second arg : you're smart you'll get it, third arg : position of the options
+  } else if (estado.equals("ventana") ) { 
+    administrarClic("ventanaCerrada", "ventanaAbierta", "bottom");  
   } else if (estado.equals("ventanaCerrada")) {
     administrarClic("jugandoCerrada", "durmiendoCerrada", "top");
   } else if (estado.equals("ventanaAbierta")) {
