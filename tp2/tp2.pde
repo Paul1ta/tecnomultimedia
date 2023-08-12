@@ -1,3 +1,8 @@
+// URL Video: https://youtu.be/PvTT0OLM-7I
+// Comisión: 3 Alumna: Paula Mendes
+// Legajo : 93546/1
+
+
 PImage p1;
 int turn;
 
