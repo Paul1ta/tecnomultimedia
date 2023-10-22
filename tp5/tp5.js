@@ -1,7 +1,8 @@
-//                     TP  N5 - TECNO
-//                     Paula   Mendes
-//                     - Pulganator -
-//                     9 3 5 4 6  / 1
+//                     TP  N5 - TECNO ---------------------
+//                     Paula   Mendes ---------------------
+//                     - Pulganator - ---------------------
+//                     9 3 5 4 6  / 1 ---------------------
+//                     U R L : https://youtu.be/P862WNkd2Qg
 
 
 let juego;                   // Se declaran las variables  globales
